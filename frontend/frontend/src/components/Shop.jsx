@@ -4,7 +4,7 @@ import milk from "../assets/milk.jpg";
 import oil from "../assets/oil.jpg";
 import spagg from "../assets/spagg.jpg";
 import tomato from "../assets/tomato.jpg";
-import "../styles/Shop.css";
+import "../styles/shop.css";
 
 const Shop = () => {
   const shopItems = [
