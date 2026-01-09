@@ -1,0 +1,36 @@
+#shop_Nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+}
+#search-bar{
+    width: 50vw;
+    padding: 20px 10px;
+    border: 2px solid gray;
+    font-size: 1.5rem;
+}
+#shopNav-logo{
+    font-size: 3rem;
+}
+#search-btn{
+    font-size: 1.4rem;
+    padding: 22px;
+    color: white;
+    background-color: green;
+}
+.shopNav-icons{
+    font-size: 1.8rem;
+}
+#Shophero-section > img{
+    width: 100vw;
+    height: 15vw;
+}
+.productsPage-products{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
