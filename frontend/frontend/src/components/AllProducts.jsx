@@ -100,7 +100,6 @@ export default function WhatsAppShoppingCart() {
   const getTotalPrice = () => cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const sendToWhatsApp = () => {
-    if (!whatsappNumber.trim()) return alert('Please enter WhatsApp number');
     if (cart.length === 0) return alert('Your cart is empty');
 
     let message = '🛒 *NEW ORDER REQUEST*\n━━━━━━━━━━━━━━━━━━━\n\n';
@@ -110,7 +109,7 @@ export default function WhatsAppShoppingCart() {
     message += `━━━━━━━━━━━━━━━━━━━\n📊 *Total Items:* ${getTotalItems()}\n💰 *TOTAL AMOUNT:* ₦${getTotalPrice().toLocaleString()}\n\n✅ Please confirm this order.\nThank you for shopping with us! 🙏`;
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/${whatsappNumber}?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/${+2348062824299}?text=${encoded}`, '_blank');
   };
 
   return (
@@ -140,10 +139,6 @@ export default function WhatsAppShoppingCart() {
         {/* Cart */}
         {showCart && (
           <div className="cart">
-            <div>
-              <label>WhatsApp Number</label>
-              <input type="tel" value={whatsappNumber} onChange={e => setWhatsappNumber(e.target.value)} />
-            </div>
             <div>
               {cart.length === 0 ? (
                 <div className="empty">
